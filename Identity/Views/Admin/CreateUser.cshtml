@@ -1,0 +1,23 @@
+﻿@model User
+
+<h1>Create New User</h1>
+<a asp-action="Index" asp-controller="Admin">Back</a>
+<div asp-validation-summary="All">
+</div>
+
+<form method="post">
+    <div>
+        <label asp-for="UserName">User Name:</label>
+        <input asp-for="UserName"/>
+    </div>
+    <div>
+        <label asp-for="Email">Email: </label>
+        <input asp-for="Email" />
+    </div>
+    <div>
+        <label asp-for="Password">Password: </label>
+        <input asp-for="Password" type="password" />
+    </div>
+
+    <button type="submit" >Create</button>
+</form>
